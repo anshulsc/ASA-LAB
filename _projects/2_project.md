@@ -1,25 +1,29 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
+title: Understanding Animal Vocal Patterns Using Machine Learning
+description: Utilizing ML and DL techniques to predict calving time and assess post-weaning stress in dairy cows
+img: assets/img/11.jpg
+importance: 1
 category: work
-giscus_comments: true
+related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This research leverages machine learning (ML) and deep learning (DL) techniques to analyze the vocal patterns of dairy cows during critical periods such as calving and weaning. The objectives are to differentiate individual cow vocalizations from noise, identify cows based on vocal signatures, predict calving time through vocal changes, and assess post-weaning stress levels by monitoring vocal alterations after calf separation. Continuous audio recordings from 30 cows will be captured using non-invasive collar devices for seven days pre- and post-calving and weaning. Advanced signal processing, feature extraction, and DL models like CNNs and transformers will be employed. The results aim to enhance precision livestock farming by improving animal welfare, optimizing calving and weaning management, boosting productivity, and promoting sustainable practices.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+#### Keywords
+*Dairy cows*, *Vocalizations*, *Machine learning*, *Calving prediction*, *Weaning stress*, *Precision livestock farming*
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Objectives
+1. Differentiate animal vocalizations from background noise.
+2. Identify individual animals based on unique vocal patterns.
+3. Predict calving time by analyzing pre-calving vocal changes.
+4. Assess stress levels by evaluating vocal patterns post-weaning.
+
+### Methodology
+- **Data Collection**: Continuous audio recordings from 30 cows will be obtained using collar-mounted devices.
+- **Signal Processing**: Noise reduction and feature extraction will be performed on the audio data.
+- **Machine Learning Models**: CNNs, ViT, and other models will be used to classify vocalizations and predict calving times.
+- **Statistical Analysis**: Differences in vocal patterns pre- and post-calving and weaning will be statistically analyzed.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -33,20 +37,8 @@ To give your project a background in the portfolio page, just add the img tag to
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Images demonstrating various aspects of the project, including data collection and keypoints detection.
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -57,25 +49,6 @@ You describe how you toiled, sweated, _bled_ for your project, and then... you r
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    More detailed visual representation of the project methodology and outcomes.
 </div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+s

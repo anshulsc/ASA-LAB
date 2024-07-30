@@ -73,7 +73,7 @@ body {
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        <span class="font-weight-bold">{{ site.first_name }}</span> ({{ site.middle_name }})
         {{ site.last_name }}
       {% else %}
         {{ site.title }}
@@ -108,20 +108,20 @@ body {
     <!-- Add your image carousel here -->
     <div class="carousel-container" id="imageCarousel">
         <div class="carousel-card">
-            <img src="assets/img/1.jpg" alt="First Image">
+            <img src="assets/img/1.png" alt="First Image">
         </div>
         <div class="carousel-card">
-            <img src="assets/img/2.jpg" alt="Second Image">
+            <img src="assets/img/2.png" alt="Second Image">
         </div>
         <div class="carousel-card">
-            <img src="assets/img/3.jpg" alt="Third Image">
+            <img src="assets/img/3.png" alt="Third Image">
         </div>
         <!-- Add more carousel items as needed -->
         <div class="carousel-card">
-            <img src="assets/img/4.jpg" alt="Fourth Image">
+            <img src="assets/img/4.png" alt="Fourth Image">
         </div>
         <div class="carousel-card">
-            <img src="assets/img/5.jpg" alt="Fifth Image">
+            <img src="assets/img/1.png" alt="Fifth Image">
         </div>
     </div>
 
@@ -133,13 +133,7 @@ body {
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
+
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
